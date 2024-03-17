@@ -1,4 +1,4 @@
-/*const {
+const {
     Ezra
 } = require("../index.js");
 const X = require("../config.js");
@@ -21,4 +21,4 @@ Ezra(
                 await msg.reply(`_${util.format(err)}_`);
             }
         }
-    });*/
+    });
