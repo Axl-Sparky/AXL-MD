@@ -4,7 +4,7 @@ const {
 const { performance } = require('perf_hooks')
 const font = require("@viper-x/fancytext");
 
-Ezra(
+/*Ezra(
     {
         pattern: "jid",
     desc: "no words",
@@ -14,7 +14,7 @@ Ezra(
         msg, client, match
     }) => {
 msg.reply(`${msg.jid}`)
-    })
+    })*/
 
 Ezra(
     {
