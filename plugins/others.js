@@ -39,16 +39,14 @@ Ezra(
         return msg.adreply(`_Bot Uptime : ${await msg.uptime()}_`)
     });
 
-/*Ezra(
+Ezra(
     {
-        name: "wa",
-        desc: "wa.me umban✅️",
-        category: "converter",
+        name: "alive",
+        category: "user",
+        desc: "To check alive"
     },
     async ({
-        msg, client, match
+        msg, client 
     }) => {
-let data = m.quoted.sender.split("@")[0]
-return m.reply(`https://wa.me/${data}?text=${args}`)
-    }
-    );*/
+        return msg.reply(`_ʜᴇy.. ī ᴀᴍ ꜱᴛɪʟʟ ᴀʟɪᴠᴇ..!_\n\n_ʀᴜɴᴛɪᴍᴇ :- ${await msg.runtime()}_`)
+    });
