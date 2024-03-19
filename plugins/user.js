@@ -6,8 +6,9 @@ const font = require("@viper-x/fancytext");
 
 Ezra(
     {
-        name: "jid",
-        category: "tool",
+        pattern: "jid",
+    desc: "no words",
+    type: "user",
     },
     async ({
         msg, client, match
@@ -17,9 +18,9 @@ msg.reply(`${msg.jid}`)
 
 Ezra(
     {
-        name: "rtime",
-        category: "user",
-        desc: "To check bot runtime"
+        pattern: "rtime",
+    desc: "To check runtime",
+    type: "user",
     },
     async ({
         msg, client 
@@ -29,9 +30,9 @@ Ezra(
 
 Ezra(
     {
-        name: "utime",
-        category: "user",
-        desc: "To check bot uptime"
+        pattern: "utime",
+    desc: "To check uptime",
+    type: "user",
     },
     async ({
         msg, client 
@@ -41,9 +42,9 @@ Ezra(
 
 Ezra(
     {
-        name: "alive",
-        category: "user",
-        desc: "To check alive"
+        pattern: "alive",
+    desc: "To check bot alive",
+    type: "user",
     },
     async ({
         msg, client 
