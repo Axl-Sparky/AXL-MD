@@ -2,7 +2,7 @@ const {
     Ezra,
     } = require("../lib/");
 const { performance } = require('perf_hooks');
-const font = require("@viper-x/fancytext");
+
 
 /*Ezra(
     {
