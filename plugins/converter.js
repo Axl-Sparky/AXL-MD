@@ -1,7 +1,45 @@
 const {
   Ezra,isPublic, isPrivate
   } = require("../lib/");
+const googleTTS = require('google-tts-api');
 
+
+
+Ezra(
+{
+    pattern: "tts",
+    fromMe: isPublic,
+    type: "converter",
+    desc: "text to speech"
+},
+async ({
+    msg, client,text, match
+}) => {
+    if (!text) {
+        msg.reply('_Enter something!_')
+    } else {
+        let [txt,
+            lang] = text.split`:`
+        const audio = googleTTS.getAudioUrl(`${txt}`, {
+            lang: lang || "en-US",
+            slow: false,
+            host: "https://translate.google.com",
+        })
+        client.sendMessage(msg.chat, {
+            audio: {
+                url: audio,
+            },
+            mimetype: 'audio/mpeg',
+            ptt: true,
+            fileName: `${'tts'}.mp3`,
+        }, {
+            quoted: msg,
+        })
+
+    }
+}); 
+
+                           
 Ezra(
     {
         pattern: "mp3",
