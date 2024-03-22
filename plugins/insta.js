@@ -19,6 +19,6 @@ let koothi = await fetch(`https://api-aswin-sparky.koyeb.app/api/search/ig?searc
 var data = await koothi.json();
 ig = data.data
 
-client.sendMessage(msg.chat, { image: { url: ig.avatar }, caption:`*_ɴᴀᴍᴇ :${ig.name}_*\n_*ᴜꜱᴇʀɴᴀᴍᴇ : ${ig.username}_*\n\n*_ꜰᴏʟʟᴏᴡᴇʀꜱ : ${ig.followers}_*\n*_ꜰᴏʟʟᴏᴡɪɴɢ : ${ig.following}_*\n*_ᴛᴏᴛᴀʟ ᴩᴏꜱᴛꜱ : ${ig.posts}_*\n*_ᴜꜱᴇʀ ʙɪᴏ_* : ${ig.description}` }, { quoted: msg });
+client.sendMessage(msg.chat, { image: { url: ig.avatar }, caption:`*_ɴᴀᴍᴇ : ${ig.name}_*\n_*ᴜꜱᴇʀɴᴀᴍᴇ : ${ig.username}_*\n*_ꜰᴏʟʟᴏᴡᴇʀꜱ : ${ig.followers}_*\n*_ꜰᴏʟʟᴏᴡɪɴɢ : ${ig.following}_*\n*_ᴛᴏᴛᴀʟ ᴩᴏꜱᴛꜱ : ${ig.posts}_*\n*_ᴜꜱᴇʀ ʙɪᴏ_* : ${ig.description}` }, { quoted: msg });
   }
 );
