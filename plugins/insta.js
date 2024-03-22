@@ -19,6 +19,6 @@ let baby = await fetch(`https://api-aswin-sparky.koyeb.app/api/search/ig?search=
 var data = await baby.json();
 ig = data.data
 
-client.sendMessage(msg.chat, { image: { url: ig.avatar }, caption:`*_ɴᴀᴍᴇ : ${ig.name}_*\n_*ᴜꜱᴇʀɴᴀᴍᴇ : ${ig.username}_*\n*_ꜰᴏʟʟᴏᴡᴇʀꜱ : ${ig.followers}_*\n*_ꜰᴏʟʟᴏᴡɪɴɢ : ${ig.following}_*\n*_ᴛᴏᴛᴀʟ ᴩᴏꜱᴛꜱ : ${ig.posts}_*\n*_ᴜꜱᴇʀ ʙɪᴏ_* : ${ig.description}` }, { quoted: msg });
+client.sendMessage(msg.chat, { image: { url: ig.avatar }, caption:`*_ɴᴀᴍᴇ : ${sasi.name}_*\n*_ᴜꜱᴇʀɴᴀᴍᴇ : ${ig.username}_*\n*_ꜰᴏʟʟᴏᴡᴇʀꜱ : ${ig.followers}_*\n*_ꜰᴏʟʟᴏᴡɪɴɢ : ${ig.following}_*\n*_ᴛᴏᴛᴀʟ ᴩᴏꜱᴛꜱ : ${ig.posts}_*\n*_ᴜꜱᴇʀ ʙɪᴏ_* : ${ig.description}` }, { quoted: msg });
   }
 );
