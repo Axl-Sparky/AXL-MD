@@ -1,4 +1,4 @@
->const {
+const {
     BOT_INFO
 } = require("../config.js");
 
