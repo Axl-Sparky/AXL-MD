@@ -1,6 +1,6 @@
 const {
-    BOT_INFO
-} = require("../config.js");
+    Ezra
+} = require("../lib/");
 
 Ezra(
     {
