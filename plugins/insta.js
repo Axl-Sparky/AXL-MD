@@ -1,4 +1,4 @@
-
+/*
 const {
     BOT_INFO
 } = require("../config.js");
@@ -25,3 +25,4 @@ client.sendMessage(msg.chat, { image: { url: ig.avatar }, caption: `_Name : ${ig
 await client.sendMessage(msg.chat, { text: `_Done!_`, edit: axl.key }, { quoted: msg });  
   }
 );
+*/
