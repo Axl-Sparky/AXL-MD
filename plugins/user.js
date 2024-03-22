@@ -1,10 +1,10 @@
 const {
-    Ezra,
+    Axl,
     } = require("../lib/");
 const { performance } = require('perf_hooks');
 
 
-/*Ezra(
+/*Axl(
     {
         pattern: "jid",
     desc: "no words",
@@ -16,7 +16,7 @@ const { performance } = require('perf_hooks');
 msg.reply(`${msg.jid}`)
     })*/
 
-Ezra(
+Axl(
     {
         pattern: "rtime",
     desc: "To check runtime",
@@ -28,7 +28,7 @@ Ezra(
         return msg.adreply(`_Bot Runtime : ${await msg.runtime()}_`)
     });
 
-Ezra(
+Axl(
     {
         pattern: "utime",
     desc: "To check uptime",
@@ -40,7 +40,7 @@ Ezra(
         return msg.adreply(`_Bot Uptime : ${await msg.uptime()}_`)
     });
 
-Ezra(
+Axl(
     {
         pattern: "alive",
     desc: "To check bot alive",

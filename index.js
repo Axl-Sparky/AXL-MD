@@ -32,7 +32,7 @@ const Users = database.define('Users', {
 ////////  🇵 🇱 🇺 🇬 🇮 🇳 🇸 ////////
 ////////////////////////////////////////
 const commands = [];
-function Ezra(commandInfo, func) {
+function Axl(commandInfo, func) {
   commandInfo.function = func;
   if (commandInfo.pattern) {
     commandInfo.pattern =
@@ -139,33 +139,33 @@ async function Connect() {
 ///🇵 🇱 🇺 🇬 🇮 🇳 🇸  🇫 🇺 🇳 🇨 ///
 /////////////////////////////////////////
     
-           commands.map(async (Ezra) => {
+           commands.map(async (Axl) => {
           // }
            let comman = msg.text;
             let text;
            switch (true) {
-           case Ezra.pattern && Ezra.pattern.test(comman):
-             text = msg.text.replace(new RegExp(Ezra.pattern, "i"), "").trim();
-               //text = msg.text.replace(text = msg.text.replace(new RegExp(`${X.PREFIX}`Ezra.pattern, `is`));
-                 Ezra.function({client, msg, text});
+           case Axl.pattern && Axl.pattern.test(comman):
+             text = msg.text.replace(new RegExp(Axl.pattern, "i"), "").trim();
+               //text = msg.text.replace(text = msg.text.replace(new RegExp(`${X.PREFIX}`Axl.pattern, `is`));
+                 Axl.function({client, msg, text});
            break;
-           case comman && Ezra.on === "text":
+           case comman && Axl.on === "text":
              text = msg.text
-               Ezra.function({client, msg, text});
+               Axl.function({client, msg, text});
            break;
-           case Ezra.on === "image" || Ezra.on === "photo":
+           case Axl.on === "image" || Axl.on === "photo":
            if (msg.mtype === "imageMessage") {
-               Ezra.function({client, msg});
+               Axl.function({client, msg});
            }
            break;
-           case Ezra.on === "sticker":
+           case Axl.on === "sticker":
            if (msg.mtype === "stickerMessage") {
-               Ezra.function({client, msg});
+               Axl.function({client, msg});
            }
            break;
-           case Ezra.on === "video":
+           case Axl.on === "video":
            if (msg.mtype === "videoMessage") {
-             Ezra.function({client, msg});
+             Axl.function({client, msg});
            }
            break;
            default:
@@ -191,6 +191,6 @@ setTimeout( () => {
 module.exports = {
  Users,
  Connect,
- Ezra,
+ Axl,
  commands
 };

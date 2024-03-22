@@ -3,9 +3,9 @@ const X = require("../config.js");
 const {
     BOT_INFO
 } = require("../config.js");
-const { Ezra } = require("../lib");
+const { Axl } = require("../lib");
 
-Ezra(
+Axl(
   {
     pattern: "menu",
     desc: "all command list",

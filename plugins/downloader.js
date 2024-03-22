@@ -1,10 +1,10 @@
-/*const { Ezra, getJson, getBuffer } = require("../lib/");
+/*const { Axl, getJson, getBuffer } = require("../lib/");
 const axios = require("axios");
 const fetch = require("node-fetch")
 const X = require("../config.js");
 const { CAPTION } = require("../config.js");
 
-Ezra(
+Axl(
   {
     pattern: "insta",
     desc: "Instagram Reel/Post Downloader",
@@ -20,7 +20,7 @@ Ezra(
             }
             });
 
-Ezra(
+Axl(
   {
     pattern: "story",
     desc: "Instagram Story Downloader",
@@ -35,7 +35,7 @@ Ezra(
             }
             });
 
-Ezra(
+Axl(
   {
     pattern: "yta",
     desc: "YouTube song Downloader",
@@ -59,7 +59,7 @@ renderLargerThumbnail: true,
 thumbnailUrl: `${yt.data.thumbnail}` }}, }, {quoted: msg })
   });
 
-Ezra(
+Axl(
   {
     pattern: "ytv",
     desc: "YouTube 720p Video Downloader",
@@ -83,7 +83,7 @@ renderLargerThumbnail: false,
 thumbnailUrl: "https://i.imgur.com/cmqBKpH.jpg" }}, caption : `_*${yt.data.title}*_`}, {quoted : msg})
   });
 
-Ezra(
+Axl(
   {
     pattern: "song",
     desc: "YouTube song Downloader",
@@ -107,7 +107,7 @@ renderLargerThumbnail: false,
 thumbnailUrl: "https://i.imgur.com/cmqBKpH.jpg" }} }, {quoted: msg })
   });
 
-Ezra(
+Axl(
   {
     pattern: "video",
     desc: "YouTube Video Downloader",
@@ -130,7 +130,7 @@ renderLargerThumbnail: false,
 thumbnailUrl: "https://i.imgur.com/cmqBKpH.jpg" }}, caption: `*${yt.result.title}*`}, {quoted: msg })
 });
 
-Ezra(
+Axl(
   {
     pattern: "spotify",
     desc: "Spotify Downloader",
@@ -153,7 +153,7 @@ renderLargerThumbnail: false,
 thumbnailUrl: "https://i.imgur.com/cmqBKpH.jpg" }}, }, {quoted: msg })
 });
 
-Ezra(
+Axl(
   {
     pattern: "pinterest",
     desc: "Pinterest Downloader",
@@ -174,7 +174,7 @@ renderLargerThumbnail: false,
 thumbnailUrl: "https://i.imgur.com/cmqBKpH.jpg" }}, caption: (X.CAPTION)}, {quoted: msg})
 });
 
-Ezra(
+Axl(
   {
     pattern: "xvd",
     desc: "Xvideo Downloader",

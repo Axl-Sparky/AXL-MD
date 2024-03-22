@@ -1,8 +1,8 @@
-const { Ezra } = require("../lib/");
+const { Axl } = require("../lib/");
 const axios = require("axios");
 const fetch = require("node-fetch");
 
-Ezra(
+Axl(
   {
     pattern: "song",
     desc: "YouTube song Downloader",

@@ -1,8 +1,8 @@
 const {
-    Ezra
+    Axl
 } = require("../lib/");
 
-Ezra(
+Axl(
     {
         pattern: "ig",
         type: "search",

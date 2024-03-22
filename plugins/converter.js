@@ -1,12 +1,12 @@
 const {
-  Ezra,isPublic, isPrivate
+  Axl,isPublic, isPrivate
   } = require("../lib/");
 const googleTTS = require('google-tts-api');
 const { remini } = require('../lib/remini.js')
 
 
 
-Ezra(
+Axl(
 {
     pattern: "tts",
     fromMe: isPublic,
@@ -41,7 +41,7 @@ async ({
 }); 
 
                            
-Ezra(
+Axl(
     {
         pattern: "mp3",
         desc: "Converts an Video/Voice to Mp3",
@@ -57,7 +57,7 @@ Ezra(
 );
 
 
-Ezra(
+Axl(
     {
         pattern: "re",
         type: "converter",

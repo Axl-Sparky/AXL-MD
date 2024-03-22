@@ -1,6 +1,6 @@
-const { Ezra } = require("../lib/");
+const { Axl } = require("../lib/");
 
-Ezra(
+Axl(
     {
         pattern: "wave",
         type: "converter",

@@ -1,10 +1,10 @@
 const {
-    Ezra
+    Axl
 } = require("../index.js");
 const X = require("../config.js");
 const util = require("util");
 
-Ezra(
+Axl(
     {
         on: "text",
         fromMe: true,
