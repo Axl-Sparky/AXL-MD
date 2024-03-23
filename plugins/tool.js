@@ -1,5 +1,7 @@
+const {
+  Axl,isPublic
+  } = require("../lib/");
 const { remini } = require('../lib/remini.js')
-
 
 
 Axl(
