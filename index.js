@@ -82,10 +82,7 @@ async function Connect() {
 
         client.ev.on('connection.update', async (update) => {
             const { connection } = update;
-           /* if (connection === 'close') {
-                console.log('[ ! ] Connection Closed: Reconnecting...');
-                await Connect();
-            } else if */ if (connection === 'open') {
+             if (connection === 'open') {
                 console.log('[ + ] Connected!');
                 let start = `*_^AXL-EMDI^_*\n\n_CONNECTED..._`
 /////////////////////////////////////////
@@ -97,7 +94,10 @@ async function Connect() {
 /////////////////////////////////////////
                 let num = X.SUDO.split(",")[0]
                     client.sendMessage(num + "@s.whatsapp.net", {text : start})
-            }
+            } else if (connection === 'close') {
+                console.log('[ ! ] Connection Closed: Reconnecting...');
+                await Connect();
+             }
         });
         client.ev.on('group-participants.update', async (info) => {
            if (info.action == 'add') {
