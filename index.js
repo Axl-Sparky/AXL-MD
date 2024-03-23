@@ -82,10 +82,10 @@ async function Connect() {
 
         client.ev.on('connection.update', async (update) => {
             const { connection } = update;
-            if (connection === 'close') {
+           /* if (connection === 'close') {
                 console.log('[ ! ] Connection Closed: Reconnecting...');
                 await Connect();
-            } else if (connection === 'open') {
+            } else if */ if (connection === 'open') {
                 console.log('[ + ] Connected!');
                 let start = `*_^AXL-EMDI^_*\n\n_CONNECTED..._`
 /////////////////////////////////////////
