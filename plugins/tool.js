@@ -7,7 +7,7 @@ const { remini } = require('../lib/remini.js')
 Axl(
     {
         pattern: "remini",
-        type: "converter",
+        type: "tool",
         fromMe: isPublic,
         desc: "converte a photo HD quality"
     },
