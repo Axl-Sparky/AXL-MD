@@ -22,5 +22,5 @@ if (!await msg.isGroup) return msg.reply("_This is a group command!_")
 
         if (!await msg.isAdmin(Y)) return msg.reply("_This command for only group admins_")
         let code = await client.groupInviteCode(msg.chat)
-        return msg.reply('_https://chat.whatsapp.com/' + code_)
+        return msg.reply('https://chat.whatsapp.com/' + code)
     })
