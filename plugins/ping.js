@@ -8,5 +8,5 @@ Axl({
     const start = new Date().getTime();
     let pong = await client.sendMessage(msg.chat, { text: "_Checking Ping..._" }, { quoted: msg });
     const end = new Date().getTime();
-    return await client.sendMessage(msg.chat, { text: "_Response in_ _${end - start}_ _Ms_", edit: pong.key }, { quoted: msg });
+    return await client.sendMessage(msg.chat, { text: "*_Response in_ ${end - start} _Ms_*", edit: pong.key }, { quoted: msg });
 });
