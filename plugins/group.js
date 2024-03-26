@@ -7,7 +7,7 @@ const X = require("../config.js");
      {
         pattern: "invite",
         fromMe: true,
-        desc: "Share's Group invitation link",
+        desc: "Share Group invitation link",
         type: "group"
     },
     async ({
