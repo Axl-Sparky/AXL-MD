@@ -3,6 +3,7 @@ module.exports = {
     SESSION_ID: process.env.SESSION_ID || "X-BOT-MD:DroughtRemiss",
     DATABASE_URL: "postgresql://aswin:kUznbwKXY4YlS9jnTUpS6Q@lava-primate-8185.8nk.gcp-asia-southeast1.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full",
     PREFIX: "^",
+    HANDLERS: "false",
     MODE: "public",
     SUDO: "919539412641",
     STICKER_DATA: process.env.STICKER_DATA || "AXL-MD;𖤍ᴀᴊꜱᴀʟ ꜱᴩᴀʀᴋy 𖤍",
