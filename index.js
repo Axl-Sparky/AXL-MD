@@ -84,7 +84,7 @@ async function Connect() {
             const { connection } = update;
              if (connection === 'open') {
                 console.log('[ + ] Connected!');
-                //let start = `*_^AXL-EMDI^_*\n\n_CONNECTED..._`
+                let start = `*_^AXL-EMDI^_*\n\n_CONNECTED..._`
 /////////////////////////////////////////
               fs.readdirSync(__dirname + "/plugins").forEach((plugin) => {
               if (plugin.endsWith(".js")) {
@@ -92,12 +92,12 @@ async function Connect() {
               }});
               console.log("Plugins Loaded🤟")
 /////////////////////////////////////////
-                /*let num = X.SUDO.split(",")[0]
-                    client.sendMessage(num + "@s.whatsapp.net", {text : start})*/
+                let num = X.SUDO.split(",")[0]
+                    client.sendMessage(num + "@s.whatsapp.net", {text : start})
 
                      ///////
 
-              let start = `_AXL MD STARTED..._\n\n_Mode : Public_\n_Prefix : X.HANDLERS_\n_Version : 1.00_\n\n\n_Web : https://axlmd-ajsal-sparky.onrender.com_\n\n\n💗`
+             /* let start = `_AXL MD STARTED..._\n\n_Mode : Public_\n_Prefix : X.HANDLERS_\n_Version : 1.00_\n\n\n_Web : https://axlmd-ajsal-sparky.onrender.com_\n\n\n💗`
 let URL = "https://chat.whatsapp.com/HbekCMezwdr6bZXFjTNkLH"
 return await client.sendMessage(`X.SUDO.split(",")[0]@s.whatsapp.net` , { text : start,
 contextInfo: { externalAdReply: {                                           
@@ -108,7 +108,7 @@ mediaUrl: URL,
 mediaType: 1,
 showAdAttribution: false,
 renderLargerThumbnail: true,
-thumbnailUrl: "https://telegra.ph/file/b51deea8df9177d78f35e.jpg" }}},{ quoted: false })
+thumbnailUrl: "https://telegra.ph/file/b51deea8df9177d78f35e.jpg" }}},{ quoted: false })*/
 
 
 
