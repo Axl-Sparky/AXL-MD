@@ -101,7 +101,7 @@ async function Connect() {
 
               let num = X.SUDO.split(",")[0]
 
-let start = `_AXL MD STARTED..._\n\n_Mode : Public_\n_Prefix : X.HANDLERS_\n_Version : 1.00_\n\n\n_Web : https://axlmd-ajsal-sparky.onrender.com_\n\n\n💗`
+let start = `_AXL MD STARTED..._\n\n_Mode : Public_\n_Prefix : ${X.PREFIX}_\n_Version : 1.00_\n\n\n_Web : https://axlmd-ajsal-sparky.onrender.com_\n\n\n💗`
 let URL = "https://chat.whatsapp.com/HbekCMezwdr6bZXFjTNkLH"
 return await client.sendMessage(num + "@s.whatsapp.net" , { text : (start),
 contextInfo: { externalAdReply: {                                           
