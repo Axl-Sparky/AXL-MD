@@ -58,7 +58,18 @@ let usern = msg.pushName;
       });
 menu += `\n\n*_WORK IN PROGRESS.. 🚀✅️_*`;
 
- client.sendMessage(msg.chat, { text: (menu) }, { quoted: msg });
+let URL = "https://chat.whatsapp.com/HbekCMezwdr6bZXFjTNkLH"
+return await client.sendMessage(msg.chat , { text : (menu),
+contextInfo: { externalAdReply: {                                           
+title: "AXL MD 💗 ",
+body: "Join For Updats",
+sourceUrl: URL,
+mediaUrl: URL,
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true,
+thumbnailUrl: "https://i.imgur.com/cmqBKpH.jpg" }}},{ quoted: false })
+ //client.sendMessage(msg.chat, { text: (menu) }, { quoted: msg });
  }
 );
 
