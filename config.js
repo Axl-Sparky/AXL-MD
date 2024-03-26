@@ -7,7 +7,7 @@ module.exports = {
     MODE: "public",
     SUDO: "919539412641",
     STICKER_DATA: process.env.STICKER_DATA || "AXL-MD;𖤍ᴀᴊꜱᴀʟ ꜱᴩᴀʀᴋy 𖤍",
-    BOT_INFO: process.env.BOT_INFO || "AXL-MD;AJSAL SPARKY;https://i.imgur.com/cmqBKpH.jpg",
+    BOT_INFO: process.env.BOT_INFO || "AXL-MD;AJSAL SPARKY;https://i.imgur.com/cmqBKpH.jpg;https://chat.whatsapp.com/HbekCMezwdr6bZXFjTNkLH",
     CAPTION: process.env.CAPTION || "_Speermy molu🥲❤️‍🩹!_",
 }
 
