@@ -57,10 +57,10 @@ let usern = msg.pushName;
         menu += `\n ╰─────────────┈`;
       });
 menu += `\n\n*_WORK IN PROGRESS.. 🚀✅️_*`;
-let TIT =  "${BOT_INFO.split(";")[0]} 💗"
-let BOD = "${BOT_INFO.split(";")[1]}"
-let THUM = "${BOT_INFO.split(";")[2]}"
-let URL = "${BOT_INFO.split(";")[3]}"
+let TIT =  "AXL-BOT-MD 💗"
+let BOD = "Aswin spermy"
+let THUM = "https://i.imgur.com/cmqBKpH.jpg"
+let URL = "https://chat.whatsapp.com/HbekCMezwdr6bZXFjTNkLH"
 return await client.sendMessage(msg.chat , { text : (menu),
 contextInfo: { externalAdReply: {                                           
 title: TIT,
