@@ -57,20 +57,20 @@ let usern = msg.pushName;
         menu += `\n ╰─────────────┈`;
       });
 menu += `\n\n*_WORK IN PROGRESS.. 🚀✅️_*`;
-let TIT =  "AXL-BOT-MD 💗"
-let BOD = "Aswin spermy"
-let THUM = "https://i.imgur.com/cmqBKpH.jpg"
+/*let TIT =  "AXL-BOT-MD 💗"
+let BOD = "Aswin spermy"*/
+//let THUM = "https://i.imgur.com/cmqBKpH.jpg"
 let URL = "https://chat.whatsapp.com/HbekCMezwdr6bZXFjTNkLH"
 return await client.sendMessage(msg.chat , { text : (menu),
 contextInfo: { externalAdReply: {                                           
-title: TIT,
-body: BOD,
+title: "AXL-BOT-MD 💗",
+body: "join for updates",
 sourceUrl: URL,
 mediaUrl: URL,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true,
-thumbnailUrl: THUM }}},{ quoted: false })
+thumbnailUrl: "https://i.imgur.com/cmqBKpH.jpg" }}},{ quoted: false })
 
  }
 );
