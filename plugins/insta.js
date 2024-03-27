@@ -1,6 +1,31 @@
 const { Axl, getJson } = require("../lib/");
-
 const { CAPTION } =  require("../config.js");
+
+
+Axl(
+  {
+    pattern: "story",
+    desc: "insta Downloader",
+    type: "downloader",
+  },
+  async ({client, msg, text}) => {
+if(!text)
+return msg.reply("_Need a story link_");
+
+  let axl = await client.sendMessage(msg.chat, { text: "_Please wait_\n_Downloading...!_" }, { quoted: msg });
+
+
+      let { result } = await getJson(`https://afiya-web-api.onrender.com/api/insta?url=${text}`);
+      
+      for (let i = 0; i < result.data.length; i++) {
+        await msg.sendFromUrl(result.data[i].url, {quoted: msg,
+caption: (CAPTION)});
+
+await client.sendMessage(msg.chat, { text: `_Downloaded!_`, edit: axl.key }, { quoted: msg });
+
+      }
+
+  });
 
 
 Axl(
