@@ -12,7 +12,7 @@ Axl(
 if(!text)
 return msg.reply("_Need a story link_");
 
-  let axl = await client.sendMessage(msg.chat, { text: "_Please wait_\n_Downloading...!_" }, { quoted: msg });
+  let azhkka = await client.sendMessage(msg.chat, { text: "_Please wait_\n_Downloading...!_" }, { quoted: msg });
 
 
       let { result } = await getJson(`https://afiya-web-api.onrender.com/api/insta?url=${text}`);
@@ -21,7 +21,7 @@ return msg.reply("_Need a story link_");
         await msg.sendFromUrl(result.data[i].url, {quoted: msg,
 caption: (CAPTION)});
 
-await client.sendMessage(msg.chat, { text: `_Downloaded!_`, edit: axl.key }, { quoted: msg });
+await client.sendMessage(msg.chat, { text: `_Downloaded!_`, edit: azhkka.key }, { quoted: msg });
 
       }
 
