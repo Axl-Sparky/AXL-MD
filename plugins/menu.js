@@ -58,36 +58,20 @@ let usern = msg.pushName;
       });
 menu += `\n\n*_WORK IN PROGRESS.. 🚀✅️_*`;
 
-let URL = "https://chat.whatsapp.com/HbekCMezwdr6bZXFjTNkLH"
+let URL = "${BOT_INFO.split(";")[3]}"
 return await client.sendMessage(msg.chat , { text : (menu),
 contextInfo: { externalAdReply: {                                           
-title: "AXL MD 💗 ",
-body: "Join For Updats",
+title: "${BOT_INFO.split(";")[0]} 💗 ",
+body: "${BOT_INFO.split(";")[1]}",
 sourceUrl: URL,
 mediaUrl: URL,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true,
-thumbnailUrl: "https://i.imgur.com/cmqBKpH.jpg" }}},{ quoted: false })
+thumbnailUrl: "${BOT_INFO.split(";")[2]}" }}},{ quoted: false })
  //client.sendMessage(msg.chat, { text: (menu) }, { quoted: msg });
  }
 );
 
-    /*let axl = X.BOT_INFO.split(';')[2]
-      return await msg.sendFromUrl(axl, {fileLength: "5555555555555", gifPlayback: true, contextInfo: { externalAdReply: {
-title: "AXL-MD",
-body: "",
-sourceUrl: "https://chat.whatsapp.com/HbekCMezwdr6bZXFjTNkLH",
-mediaUrl: "",
-mediaType: 1,
-showAdAttribution: true,
-renderLargerThumbnail: false,
-thumbnailUrl: "https://i.imgur.com/cmqBKpH.jpg" }}, caption : (menu)}, {quoted : msg})
-});
-
-return client.sendMessage(msg.chat, { [type]: buff, ...options }, { ...options });
-
-
-*/
 
 //ᴄʀᴇᴀᴛᴇᴅ ʙy  A-J-X-A-L S-P-A-R-K-Y
