@@ -57,19 +57,21 @@ let usern = msg.pushName;
         menu += `\n ╰─────────────┈`;
       });
 menu += `\n\n*_WORK IN PROGRESS.. 🚀✅️_*`;
-
+let TIT =  "${BOT_INFO.split(";")[0]} 💗"
+let BOD = "${BOT_INFO.split(";")[1]}"
+let THUM = "${BOT_INFO.split(";")[2]}"
 let URL = "${BOT_INFO.split(";")[3]}"
 return await client.sendMessage(msg.chat , { text : (menu),
 contextInfo: { externalAdReply: {                                           
-title: "${BOT_INFO.split(";")[0]} 💗 ",
-body: "${BOT_INFO.split(";")[1]}",
+title: TIT,
+body: BOD,
 sourceUrl: URL,
 mediaUrl: URL,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true,
-thumbnailUrl: "${BOT_INFO.split(";")[2]}" }}},{ quoted: false })
- //client.sendMessage(msg.chat, { text: (menu) }, { quoted: msg });
+thumbnailUrl: THUM }}},{ quoted: false })
+
  }
 );
 
