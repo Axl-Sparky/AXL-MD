@@ -54,7 +54,7 @@ await client.sendMessage(msg.chat, { text: `_Downloaded!_`, edit: axl.key }, { q
   });
 
 
-Axl(
+/*Axl(
     {
         pattern: "ig",
         type: "search",
@@ -73,4 +73,4 @@ ig = data.data
 
 client.sendMessage(msg.chat, { image: { url: ig.avatar }, caption:`*_ɴᴀᴍᴇ : ${sasi.name}_*\n*_ᴜꜱᴇʀɴᴀᴍᴇ : ${ig.username}_*\n*_ꜰᴏʟʟᴏᴡᴇʀꜱ : ${ig.followers}_*\n*_ꜰᴏʟʟᴏᴡɪɴɢ : ${ig.following}_*\n*_ᴛᴏᴛᴀʟ ᴩᴏꜱᴛꜱ : ${ig.posts}_*\n*_ᴜꜱᴇʀ ʙɪᴏ_* : ${ig.description}` }, { quoted: msg });
   }
-);
+);*/
