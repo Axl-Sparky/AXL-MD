@@ -1,7 +1,7 @@
 >const {
     Axl
 } = require("../lib/");
-
+const fetch = require("node-fetch");
 
 Axl(
     {
