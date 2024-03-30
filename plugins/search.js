@@ -7,7 +7,7 @@ Axl(
     {
         pattern: "lyrics",
         fromMe: true,
-        desc: "lyrics searcher",
+        desc: "song lyrics searcher",
         type: "search",
     },
     async ({
