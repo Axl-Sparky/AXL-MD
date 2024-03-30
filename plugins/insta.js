@@ -54,23 +54,25 @@ await client.sendMessage(msg.chat, { text: `_Downloaded!_`, edit: axl.key }, { q
   });
 
 
-/*Axl(
+
+
+Axl(
     {
         pattern: "ig",
         type: "search",
-        desc: "search a insta id"
+        fromMe: true,
+        desc: "search a instagram user"
     },
     async ({
         client, msg, text
     }) => {
-if (!text) return await msg.reply("_Enter a insta Username_");
-//match = match || msg.quoted?.text;
-msg.reply("_Searching..!_")
-      
-let baby = await fetch(`https://api-aswin-sparky.koyeb.app/api/search/ig?search=${text}`);
-var data = await baby.json();
+if (!text) return await msg.reply("_Enter a Insta Username_");
+
+
+let sample = await fetch(`https://api-aswin-sparky.koyeb.app/api/search/ig?search=${text}`);
+var data = await sample.json();
 ig = data.data
 
-client.sendMessage(msg.chat, { image: { url: ig.avatar }, caption:`*_ɴᴀᴍᴇ : ${sasi.name}_*\n*_ᴜꜱᴇʀɴᴀᴍᴇ : ${ig.username}_*\n*_ꜰᴏʟʟᴏᴡᴇʀꜱ : ${ig.followers}_*\n*_ꜰᴏʟʟᴏᴡɪɴɢ : ${ig.following}_*\n*_ᴛᴏᴛᴀʟ ᴩᴏꜱᴛꜱ : ${ig.posts}_*\n*_ᴜꜱᴇʀ ʙɪᴏ_* : ${ig.description}` }, { quoted: msg });
+client.sendMessage(msg.chat, { image: { url: ig.avatar }, caption: `*_ɴᴀᴍᴇ : ${ig.name}_*\n*_ᴜꜱᴇʀɴᴀᴍᴇ : ${ig.username}_*\n\n*_ꜰᴏʟʟᴏᴡᴇʀꜱ : ${ig.followers}_*\n*_ꜰᴏʟʟᴏᴡɪɴɢ : ${ig.following}_*\n*_ᴩᴏꜱᴛ : ${ig.posts}_*\n*_ʙɪᴏ :_* ${ig.description}` }, { quoted: msg })
   }
-);*/
+);
