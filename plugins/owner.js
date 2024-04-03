@@ -15,7 +15,7 @@ Axl(
         pattern: "restart",
         fromMe: true,
         desc: "Restart the bot",
-        type: "sudo",
+        type: "owner",
     },
     async ( {
         msg, args, client
