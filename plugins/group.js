@@ -13,14 +13,14 @@ const X = require("../config.js");
     async ({
         msg, client, match
     }) => {
-	    let SPERMY = (msg.me);
+	    
 	    let Y = (msg.sender);
 
 
 
 if (!await msg.isGroup) return msg.reply("_This is a group command!_")
 
-        if (!await msg.isAdmin(SPERMY)) return msg.reply("_I'm not an admin_")
+        if (!await msg.isAdmin(msg.me)) return msg.reply("_I'm not an admin_")
 
         if (!await msg.isAdmin(Y)) return msg.reply("_This command for only group admins_")
         let code = await client.groupInviteCode(msg.chat)
@@ -41,7 +41,7 @@ Axl(
         msg, client, args, match, text
     }) => {
         try {
-		let SPERMY = (msg.me);
+		
 		let Y = (msg.sender);
 
 
@@ -49,7 +49,7 @@ Axl(
             if(!msg.isGroup) {
                          return await msg.reply("_This is a group command !_");
        }
-            if (!await msg.isAdmin(SPERMY)) return msg.reply("_I'm not an admin_")
+            if (!await msg.isAdmin(msg.me)) return msg.reply("_I'm not an admin_")
             if (!await msg.isAdmin(msg.sender)) return msg.reply("_This command for only group admins_")
             if (!(match || msg.quoted)) return msg.reply("_Mention a user._")
             if (match) {
