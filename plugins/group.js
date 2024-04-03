@@ -1,7 +1,5 @@
 const { Axl } = require("../lib/");
 const X = require("../config.js");
-let SPERMY = (msg.me);
-let Y = (msg.sender);
 
 
 
@@ -15,6 +13,10 @@ let Y = (msg.sender);
     async ({
         msg, client, match
     }) => {
+	    let SPERMY = (msg.me);
+	    let Y = (msg.sender);
+
+
 
 if (!await msg.isGroup) return msg.reply("_This is a group command!_")
 
@@ -39,6 +41,10 @@ Axl(
         msg, client, args, match, text
     }) => {
         try {
+		let SPERMY = (msg.me);
+		let Y = (msg.sender);
+
+
          
             if(!msg.isGroup) {
                          return await msg.reply("_This is a group command !_");
