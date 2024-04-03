@@ -38,7 +38,10 @@ Axl(
     async ({
         msg, client, match
     }) => {
-
+	    
+        if(!msg.isGroup) {
+                         return await msg.reply("_This is a group command !_");
+       }
         if (!await msg.isAdmin(msg.me)) return msg.reply("_I'm not an admin_")
         if (!await msg.isAdmin(msg.sender)) return msg.reply("_This command for only group admins !_")
         await client.groupSettingUpdate(msg.chat , 'announcement');
@@ -56,7 +59,10 @@ Axl(
     async ({
         msg, client, match
     }) => {
-
+	    
+if(!msg.isGroup) {
+                         return await msg.reply("_This is a group command !_");
+       }
         if (!await msg.isAdmin(msg.me)) return msg.reply("_I'm not an admin_")
         if (!await msg.isAdmin(msg.sender)) return msg.reply("_This command for only group admins !_")
         await client.groupSettingUpdate(msg.chat , 'not_announcement');
@@ -74,6 +80,10 @@ Axl(
     async ({
         msg, client, args, match, text }) => {
         try {
+
+		if(!msg.isGroup) {
+                         return await msg.reply("_This is a group command !_");
+       }
             if (!await msg.isAdmin(msg.me)) return msg.reply("_Admin access not conferred._")
             if (!await msg.isAdmin(msg.sender)) return msg.reply("_Only for authorized administrators._")
 
