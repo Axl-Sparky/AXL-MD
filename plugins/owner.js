@@ -9,6 +9,28 @@ const {
 } = require("child_process");
 
 
+Axl(
+    {
+        pattern: "save",
+        fromMe: true,
+        type: "owner",
+        desc: "save videos or images",
+    },
+    async ({
+        msg, client, args
+    }) => {
+if (!msg.quoted) {
+        return msg.reply("_Reply to Anyone's Status!_");
+}
+let res = await msg.quoted.download();
+      if(msg.quoted.videoMessage){
+       await client.sendMessage(msg.chat, { video :res ,  mimetype:"video/mp4"}, {quoted: msg })
+      } else if(msg.quoted.imageMessage){
+      await client.sendMessage(msg.chat, { image :res ,  mimetype:"image/jpeg"}, {quoted: msg })
+      }
+    }
+	);
+
 
 Axl(
     {
