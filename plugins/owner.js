@@ -42,7 +42,7 @@ Axl(
     async ( {
         msg, args, client
     }) => {
-        await msg.reply("_Restarting..._");
+        await msg.reply("_Restarting...!_");
         exec("node index.js", (error, stdout, stderr) => {
             if (error) {
                 return client.sendMessage(msg.chat , `Error: ${error}`);
