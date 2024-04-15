@@ -32,7 +32,7 @@ let res = await msg.quoted.download();
 	);
 
 
-Axl(
+/*Axl(
     {
         pattern: "restart",
         fromMe: true,
@@ -48,7 +48,7 @@ Axl(
                 return client.sendMessage(msg.chat , `Error: ${error}`);
             } return;
         });
-    });
+    });*/
 
 
 Axl(
