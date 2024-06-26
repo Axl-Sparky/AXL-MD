@@ -38,10 +38,10 @@ Axl(
 if(!text)
 return msg.reply("_Need a Instagram link_");
 
-  let axl = await client.sendMessage(msg.chat, { text: "_Please wait_\n_Downloading...!_" }, { quoted: msg });
+  let axl = await client.sendMessage(msg.chat, { text: "_Downloading...!_" }, { quoted: msg });
 
 
-      let { result } = await getJson(`https://afiya-web-api.onrender.com/api/insta?url=${text}`);
+      let { result } = await getJson(`https://api.thexapi.xyz/api/v1/download/instagram?url=${text}`);
       
       for (let i = 0; i < result.data.length; i++) {
         await msg.sendFromUrl(result.data[i].url, {quoted: msg,
