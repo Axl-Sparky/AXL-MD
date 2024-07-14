@@ -53,7 +53,7 @@ async function MakeSession() {
         const {
           data
         } = await axios(`https://paste.c-net.org/${X.SESSION_ID.split(':')[1]}`);
-        await fs.writeFileSync("./lib/auth_info_baileys/creds.json", JSON.stringify(data));
+        // await fs.writeFileSync("./lib/auth_info_baileys/creds.json", JSON.stringify(data));
         console.log("SESSION CREATED SUCCESSFULLY✅");
       } catch (err) {
         console.log(err);
@@ -62,7 +62,7 @@ async function MakeSession() {
 MakeSession();
 //------------------------------
 
-/*async function Connect() {
+async function Connect() {
     try {
         let store = makeInMemoryStore({
             logger: pino().child({ level: 'silent', stream: 'store' })
@@ -84,7 +84,7 @@ MakeSession();
             const { connection } = update;
              if (connection === 'open') {
                 console.log('[ + ] Connected!');
-              //  let start = `*_^AXL-EMDI^_*\n\n_CONNECTED..._`*/
+              //  let start = `*_^AXL-EMDI^_*\n\n_CONNECTED..._`
 /////////////////////////////////////////
               fs.readdirSync(__dirname + "/plugins").forEach((plugin) => {
               if (plugin.endsWith(".js")) {
