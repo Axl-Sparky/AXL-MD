@@ -62,7 +62,7 @@ async function MakeSession() {
 MakeSession();
 //------------------------------
 
-async function Connect() {
+/*async function Connect() {
     try {
         let store = makeInMemoryStore({
             logger: pino().child({ level: 'silent', stream: 'store' })
@@ -84,7 +84,7 @@ async function Connect() {
             const { connection } = update;
              if (connection === 'open') {
                 console.log('[ + ] Connected!');
-              //  let start = `*_^AXL-EMDI^_*\n\n_CONNECTED..._`
+              //  let start = `*_^AXL-EMDI^_*\n\n_CONNECTED..._`*/
 /////////////////////////////////////////
               fs.readdirSync(__dirname + "/plugins").forEach((plugin) => {
               if (plugin.endsWith(".js")) {
