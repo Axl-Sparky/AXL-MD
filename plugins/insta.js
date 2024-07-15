@@ -28,7 +28,7 @@ await client.sendMessage(msg.chat, { text: `_Downloaded!_`, edit: azhkka.key }, 
   });
 
 
-Axl(
+/*Axl(
   {
     pattern: "insta",
     desc: "insta Downloader",
@@ -52,7 +52,7 @@ await client.sendMessage(msg.chat, { text: `_Downloaded!_`, edit: axl.key }, { q
       }
 
   });
-
+*/
 
 
 
