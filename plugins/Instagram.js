@@ -18,7 +18,7 @@ if(!text) return msg.reply("_Enter a insta Url_")
       let { result } = await getJson(`https://afiya-web-api.onrender.com/api/insta?url=${text}`)
 
   await client.sendMessage(msg.chat, {
-            text: "_Wait a sec !_"
+            text: "_Yeah, wait a sec !_"
         }, {
             quoted: msg
         })
