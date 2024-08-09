@@ -69,7 +69,7 @@ let oih = `${text}`
 await client.updateBlockStatus(oih + "@s.whatsapp.net", "block")
 
   await client.sendMessage(msg.chat, {
-                text: `_User Unblocked_`, edit: dl.key
+                text: `_User Unblocked_`, edit: guh.key
                   
 //await msg.reply("_User Blocked_")
   
