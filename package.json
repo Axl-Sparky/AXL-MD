@@ -1,13 +1,13 @@
 {
-    "name": "Ajsal",
+    "name": "Louis",
     "version": "1.0.0",
     "description": "WhatsApp Userbot",
     "main": "index.js",
     "scripts": {
-        "start": "pm2 start . --attach --name AXL-BOT-MD",
+        "start": "pm2 start . --attach --name X-BOT-MD",
         "test": "echo \"No tests specified\" && exit 0"
     },
-    "author": "AJSAL SPARKY",
+    "author": "ASWIN SPARKY",
     "license": "MIT",
     "repository": {
         "type": "git",
